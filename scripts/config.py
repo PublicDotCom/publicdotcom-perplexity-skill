@@ -33,7 +33,7 @@ def create_client(secret, account_id=None):
         from public_api_sdk.auth_config import ApiKeyAuthConfig
     except ImportError:
         print("Installing required dependency: publicdotcom-py...")
-        subprocess.check_call([sys.executable, "-m", "pip", "install", "publicdotcom-py==0.1.8"])
+        subprocess.check_call([sys.executable, "-m", "pip", "install", "publicdotcom-py==0.1.15"])
         from public_api_sdk import PublicApiClient, PublicApiClientConfiguration
         from public_api_sdk.auth_config import ApiKeyAuthConfig
 

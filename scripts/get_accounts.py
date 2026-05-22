@@ -1,5 +1,3 @@
-import os
-import subprocess
 import sys
 
 from config import get_api_secret, create_client

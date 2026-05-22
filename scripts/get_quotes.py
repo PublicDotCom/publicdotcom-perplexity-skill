@@ -6,11 +6,17 @@ import sys
 from config import get_api_secret, get_account_id, create_client
 
 try:
-    from public_api_sdk import OrderInstrument, InstrumentType
+    from public_api_sdk import (
+        OrderInstrument,
+        InstrumentType,
+    )
 except ImportError:
     print("Installing required dependency: publicdotcom-py...")
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "publicdotcom-py==0.1.8"])
-    from public_api_sdk import OrderInstrument, InstrumentType
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "publicdotcom-py==0.1.15"])
+    from public_api_sdk import (
+        OrderInstrument,
+        InstrumentType,
+    )
 
 
 def get_quotes(symbols, account_id=None):

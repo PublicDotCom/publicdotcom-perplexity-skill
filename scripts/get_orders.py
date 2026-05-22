@@ -1,6 +1,4 @@
 import argparse
-import os
-import subprocess
 import sys
 
 from config import get_api_secret, get_account_id, create_client
